@@ -4,7 +4,7 @@ variable "key_name" {
   default     = "jenkins-key"
 }
 
-variable "public_key_path" {
+variable "public_key" {
   description = "public SSH key"
   type        = string
   default     = "/Users/snehaavula/.ssh/id_rsa.pub"
@@ -13,5 +13,5 @@ variable "public_key_path" {
 variable "ami_id" {
   description = "EC2 instance"
   type        = string
-  default     = "ami-0c96815ba84c71c13"
+  default     = "ami-01e3c4a339a264cc9"
 }

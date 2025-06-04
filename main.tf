@@ -6,7 +6,7 @@ variable "public_key_path" {
   default = "/Users/snehaavula/jenkins-key.pub"
 }
 resource "aws_key_pair" "jenkins_key" {
-  key_name   = interview-test
+  key_name   = "interview-test2"
   public_key = file(var.public_key_path)
 }
 
